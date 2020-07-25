@@ -1,0 +1,19 @@
+btn.addEventListener('click', (e) => {
+    console.log(e.target.className)
+    e.preventDefault()
+    alert('Signed in!')
+    btn.style.background='red'
+    btn.style.border='black'
+    btn.textContent='Logged in already!'
+    form=document.getElementById('loginform')
+    form.remove()
+    title=document.querySelector('.page-header')
+    title.textContent="You're already logged in!"
+    page=document.getElementById('stuff')
+    page.innerHTML = '<h1> You are already signed in! </h1> <button id="hometime" class="btn btn-success">Go home</button> <br>'
+    homebt=document.getElementById('hometime')
+    homebt.addEventListener('click', (b) => {
+        alert('Redirecting to home...')
+        window.location.href='index.html'
+    })
+})
