@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 btn=document.getElementById('loginbtn')
 const form=document.getElementById('loginform')
 const emailin=document.getElementById('emailinput')
@@ -20,3 +21,27 @@ function onSubmit(e) {
         passin.value=''
     }
 }
+=======
+btn=document.getElementById('loginbtn')
+const form=document.getElementById('loginform')
+const emailin=document.getElementById('emailinput')
+const passin=document.getElementById('passwordinput')
+const users=document.getElementById('users')
+
+form.addEventListener('submit', onSubmit)
+
+function onSubmit(e) {
+    e.preventDefault()
+    if(emailin.value==='' || passin.value==='') {
+        alert('Email or password is empty.')
+    } else {
+        alert('Created user...')
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(`${emailin.value} : ${passin.value}`))
+        users.appendChild(li)
+
+        emailin.value=''
+        passin.value=''
+    }
+}
+>>>>>>> e4415e5ce8818db552a4fbf35d3484fb5f1902d0

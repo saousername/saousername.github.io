@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,3 +77,83 @@
     <script src="main.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+    <script src="https://kit.fontawesome.com/ec6fc1372b.js" crossorigin="anonymous"></script>
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fab fa-github"></i>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">SAODev</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="videotutorial.html">Videos</a></li>
+              <li><a href="texttutorial.html">Articles</a></li>
+            </ul>
+            
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="donate.html"><span class="glyphicon glyphicon-gift"></span> Donate</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class='container' id='stuff'>
+      <h1 class='page-header'>
+        Login
+      </h1>
+      <form id='loginform'>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="passwordinput" placeholder="Password">
+        </div>
+        <button type="submit" id='loginbtn' class="btn btn-success">Submit</button>
+      </form>
+      <br>
+      <h4>Existing Users</h4>
+      <ul id='users'>
+        <li>User 1</li>
+        <li>User 2</li>
+        <li>User 3</li>
+      </ul>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- My own JavaScript :) -->
+    <script src="main.js"></script>
+  </body>
+</html>
+>>>>>>> e4415e5ce8818db552a4fbf35d3484fb5f1902d0
