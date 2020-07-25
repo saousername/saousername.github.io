@@ -24,7 +24,7 @@
         </div>
         <ul class="nav navbar-nav">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
           </ul>
           <li class="dropdown">
@@ -42,28 +42,29 @@
         </ul>
       </div>
     </nav>
-    <div class='container'>
+    <div class='container' id='stuff'>
       <h1 class='page-header'>
-        SAO Development
+        Login
       </h1>
-      <!-- Typography ^^ VV -->
-      <i class="fab fa-github"></i>
-      <p class='text-left'>
-        Welcome to my development page. This is where I post all my blogs about development and what I am working on.
-        I am hoping to also post tutorials on this in the future. This website is something I am very passionate about.
-        I made it because I want to share my creations with the world and allow them to learn from me & my mistakes. Expect to
-        see video tutorials, text tutorials, development blogs and downloads to things I have made on this upcoming site.
-        It is made with Bootstrap by the way. <b>Thanks, Twitter!</b>
-      </p>
-
-      <hr>
-      <!-- Alignment -->
-      <h3 class='page-subheader'>Your Support & Donations</h3>
-      <p class='text-left'>
-        I'd love your support. Running this website and handling all the content that goes on it can get a little bit
-        physically taxing at times. Donations are what I pay for my day-to-day life off and if you could pay just $2 to my
-        next coffee so I can write my next project, it'd mean the world too me.
-      </p>
+      <form id='loginform'>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="emailinput" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="passwordinput" placeholder="Password">
+        </div>
+        <button type="submit" id='loginbtn' class="btn btn-success">Submit</button>
+      </form>
+      <br>
+      <h4>Existing Users</h4>
+      <ul id='users'>
+        <li>User 1</li>
+        <li>User 2</li>
+        <li>User 3</li>
+      </ul>
 
     </div>
 
