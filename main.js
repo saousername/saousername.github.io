@@ -16,7 +16,7 @@ function viewpip(e) {
 }
 function issuepip(e) {
     alert('Issue Reported!')
-=======
+
 const download = document.getElementById('download-pip')
 const view = document.getElementById('view-pip')
 const issue = document.getElementById('issue-pip')
@@ -35,5 +35,4 @@ function viewpip(e) {
 }
 function issuepip(e) {
     alert('Issue Reported!')
->>>>>>> e4415e5ce8818db552a4fbf35d3484fb5f1902d0
 }
