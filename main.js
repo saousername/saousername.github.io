@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const download = document.getElementById('download-pip')
 const view = document.getElementById('view-pip')
 const issue = document.getElementById('issue-pip')
